@@ -1,0 +1,66 @@
+<DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SCIENTIFIC CALCULATOR</title>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="calculator-container">
+            <div id="display">0</div>
+            <div class="button-row">
+                <button class="button clear" type="button" onclick="clearDisplay()">C</button>
+                <button class="button operator" type="button" onclick="appendOperator('√')">√</button>
+                <button class="button operator" type="button" onclick="appendOperator('^')">^</button>
+                <button class="button operator" type="button" onclick="appendOperator('/')">/</button>
+            </div>
+            <div class="button-row">
+                <button class="button" type="button" onclick="appendNumber('7')">7</button>
+                <button class="button" type="button" onclick="appendNumber('8')">8</button>
+                <button class="button" type="button" onclick="appendNumber('9')">9</button>
+                <button class="button operator" type="button" onclick="appendOperator('*')">*</button>
+            </div>
+            <div class="button-row">
+                <button class="button" type="button" onclick="appendNumber('4')">4</button>
+                <button class="button" type="button" onclick="appendNumber('5')">5</button>
+                <button class="button" type="button" onclick="appendNumber('6')">6</button>
+                <button class="button operator" type="button" onclick="appendOperator('-')">-</button>
+            </div>
+            <div class="button-row">
+                <button class="button" type="button" onclick="appendNumber('1')">1</button>
+                <button class="button" type="button" onclick="appendNumber('2')">2</button>
+                <button class="button" type="button" onclick="appendNumber('3')">3</button>
+                <button class="button operator" type="button" onclick="appendOperator('+')">+</button>
+            </div>
+            <div class="button-row">
+                <button class="button" type="button" onclick="appendNumber('0')">0</button>
+                <button class="button dot" type="button" onclick="appendNumber('.')">.</button>
+                <button class="button operator" type="button" onclick="appendOperator('!')">!</button>
+                <button class="button equal" type="button" onclick="calculate()">=</button>
+            </div>
+            <div class="button-row">
+                <button class="button operator" type="button" onclick="appendOperator('sin')">sin</button>
+                <button class="button operator" type="button" onclick="appendOperator('cos')">cos</button>
+                <button class="button operator" type="button" onclick="appendOperator('tan')">tan</button>
+                <button class="button operator" type="button" onclick="appendOperator('abs')">abs</button>
+            </div>
+            <div class="button-row">
+                <button class="button operator asin" type="button" onclick="appendOperator('asin')">asin</button>
+                <button class="button operator acos" type="button" onclick="appendOperator('acos')">acos</button>
+                <button class="button operator atan" type="button" onclick="appendOperator('atan')">atan</button>
+                <button class="button operator" type="button" onclick="appendOperator('%')">%</button>
+            </div>
+            <div class="button-row">
+                <button class="button operator" type="button" onclick="appendOperator('ln')">ln</button>
+                <button class="button operator" type="button" onclick="appendOperator('log')">log</button>
+                <button class="button operator" type="button" onclick="appendOperator('∛')">∛</button>
+                <button class="button operator degToRad" type="button" onclick="appendOperator('degToRad')">deg<br>→rad</button>
+            </div>
+            <div id="scanlines"></div>
+            <div id="glow"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>

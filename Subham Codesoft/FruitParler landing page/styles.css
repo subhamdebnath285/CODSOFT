@@ -1,0 +1,125 @@
+/* styles.css */
+
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background: url(FruitParler.jpg) no-repeat ;   
+}
+h2{
+    font-size: 2.4rem;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #383b39;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+ nav a:hover{
+    color: blue;
+}
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero {
+    background-size: 100%;
+    background-position: center;
+    color: #2a8e48;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 4rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #32a852;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #2a8e48;
+}
+
+.menu-item {
+    background: url(AppaleBrner.jpg) no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 87px;
+    margin: 147px;
+}
+
+
+
+.menu-item img {
+    max-width: 56px;
+    height: auto;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    color: #777;
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #32a852;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .menu-item {
+        width: 90%;
+    }
+}
